@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styleContact.css"
+    <link rel="stylesheet" href="contactUs.css"
 </head>
-<script src="script.js"></script>
+<script src="contactus.js"></script>
 
 <header>
     <div class="logo_header">
-        <img src="LOGO.png" class="imgLogoHeader" alt="LOGO">
+        <img src="Imagens/LOGO.png" class="imgLogoHeader" alt="LOGO">
     </div>
     <div class="menuPrincipal">
         <a href="home.html" target="_blank" class="activeHome">Home</a>
@@ -29,6 +29,7 @@
 
 <body>
 
+<div id="primeiroBloco">
     <div class="directionTitle">
         <div class="home" >Home ></div> 
         <div class="contact">Contact us</div>
@@ -40,81 +41,170 @@
     </div>
 
     <div class="mapImage">
-        <img src="map.png" alt="Map">
+        <img src="Imagens/map.png" alt="Map">
+    </div>
+</div>
+
+<div id="segundoBloco">
+    
+    <div class="followUs">
+        <p>Follow us</p>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="Imagens/fbPage2.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/caroltagliaferro/" target="_blank">
+            <img src="Imagens/igPage2.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="Imagens/ttPage2.png" alt="Twitter">
+        </a>
+        <a href="https://www.linkedin.com/in/ana-tagliaferro-2b8467268/" target="_blank">
+            <img src="Imagens/inPage2.png" alt="Linkedin">
+        </a>
+        
     </div>
 
+    <div class="phone">
+        <img src="Imagens/phone.png" alt="Icone telefone">
+        +94 4444 5555 6
+    </div>
+    
+    <div class="location">
+        <img src="Imagens/gps.png" alt="Icone GPS">
+        <p>but also the leap into electronic<br>typesetting</p>
+    </div>
+
+</div>
+
+<div id="terceiroBloco">
+    <div class="imageContainer">
+        <img id="linha1" src="Imagens/linha1.png" alt="Imagem linha">
+    </div>
+    
+    <div class="titulo">
+        <h2>Say hello</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing .</p>
+    </div>
+
+    <div class="contactForm">
+        <form class="formulario">
+            <div class="linha">
+                <div class="campo">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" class="fname">
+                </div>
+                <div class="campo">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+
+            <div class="linhaUnica">
+                <div class="campoUnico">
+                    <label for="emailForm">Email Address:</label>
+                    <input type="email" id="emailForm" name="email">
+                </div>
+            </div>
+            
+            <div class="linhaUnica">
+                <div class="campoUnico">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10" cols="50"></textarea>
+                </div>
+            </div>
+
+            <div class="linhaBotao">
+                <button type="submit" onclick="salvar()" >Continue</button>
+            </div>
+            
+
+        </form>
+    </div>
+</div>
 
 
 
-
-
-
-<div class="fimHome">
-    <h5>Lorem Ipsum</h5>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry.</p>
+    <div id="quartoBloco">
+        <div class="fimHome">
+            <h5>Lorem Ipsum</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry.</p>
+        </div>
 
         <div class="subscribeConteudo">
+            
+            <div class="textoSubscribe">
                 <h5>Stay in the loop</h5>
                 <p>Subscrive to receive the latest news and updates about TDA.<br>We promise not to spam you!</p>
-                <div class="botaoEmail">
-                    <form class="emailBox">
-                        <input type="email" placeholder="Enter email address">
-                        <button type="submit">Continue</button>
-                    </form>  
-                </div>   
-        </div> 
-   
- </div>         
-      
+            </div>
+
+            
+            <div class="emailInput">
+                <form class="emailBox">
+                    <input type="email" id="emailPage2" placeholder="Enter email address">
+                    <button type="submit" onclick="salvar()" >Continue</button>
+                </form>  
+            </div>   
+    </div>
+    
+          
 </body>
 
 
 
 <footer>
 
-<div class="logoFooter">
-    <img src="LOGO.png" class="imgLogoFooter" alt="Logo footer">
-</div>
-<p>Lorem Ipsum is simply dummy text of the<br>printing andtypesetting industry.</p>
-<p>@Logo</p>
-<p id="aboutUs">
-    About us
-    <br><br>
-    Zeux
-    <br>
-    Portfolio
-    <br>
-    Careers
-    <br>
-    Contact us
-</p>
+    <div class="logoFooter">
+        <img src="Imagens/LOGO.png" class="imgLogoFooter" alt="Logo footer">
+        <p>Lorem Ipsum is simply dummy text of the<br>printing andtypesetting industry.</p>
+        <p>@Logo</p>
+    </div>
     
-<p id="contactUs">
-    Contact us
-    <br><br>
-    Lorem Ipsum is simply dummy text of the<br>printing andtypesetting industry.
-    <br><br>
-    +908 89097 890
-</p>
+    <p id="aboutUs">
+        About us
+        <br><br>
+        Zeux
+        <br>
+        Portfolio
+        <br>
+        Careers
+        <br>
+        Contact us
+    </p>
+        
+    <p id="contactUs">
+        Contact us
+        <br><br>
+        Lorem Ipsum is simply dummy text of the<br>printing andtypesetting industry.
+        <br><br>
+        +908 89097 890
+    </p>
+    
+    <div class="redeSociais">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="Imagens/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/caroltagliaferro/" target="_blank">
+            <img src="Imagens/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="Imagens/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.linkedin.com/in/ana-tagliaferro-2b8467268/" target="_blank">
+            <img src="Imagens/linkedin.png" alt="Linkedin">
+        </a>
+        
+    </div>
 
-<div class="redeSociais">
-    <a href="https://www.facebook.com" target="_blank">
-        <img src="facebook.png" alt="Facebook">
-    </a>
-    <a href="https://www.instagram.com/caroltagliaferro/" target="_blank">
-        <img src="instagram.png" alt="Instagram">
-    </a>
-    <a href="https://twitter.com" target="_blank">
-        <img src="twitter.png" alt="Twitter">
-    </a>
-    <a href="https://www.linkedin.com/in/ana-tagliaferro-2b8467268/" target="_blank">
-        <img src="linkedin.png" alt="Linkedin">
-    </a>
-</div>
-     <hr>
-     
+    
+   
 </footer>
+
+<div class="copyright">
+    Copyright ® 2022 prodesigner All rights Rcerved
+</div>
+
 </html>
+
 
 
 
