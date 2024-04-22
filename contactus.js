@@ -26,6 +26,7 @@ function salvar(){
     alert("Email cadastrado com sucesso!")
 }   
 
+
 function validarNome(nome) {
     
     var regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s-']+$/;
@@ -55,9 +56,26 @@ function salvarContactUs(fname, lname, emailForm, message){
         return
     }
 
-    let info = JSON.stringify({nome: fname, sobrenome: lname, emailForm: emailForm, message: message})
+    let info = {nome: fname, sobrenome: lname, emailForm: emailForm, message: message}
 
-    localStorage.setItem('info', info)
+    let objeto = []
+
+    if(localStorage.infos){
+        
+        objeto = JSON.parse(localStorage.getItem('infos'))
+    }
+    
+    objeto.push(info)
+
+    localStorage.infos = JSON.stringify(objeto)
+
+   
+    document.getElementById("fname").value = " "
+    document.getElementById("lname").value = " "
+    document.getElementById("emailForm").value = " "
+    document.getElementById("message").value = " "
+
+  
 
     alert("Cadastro concluído com sucesso!")
 }
