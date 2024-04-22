@@ -47,6 +47,11 @@ a {
     text-decoration: none;
 }
 
+.menuPrincipal>a:hover{
+    transform: scale(1.1);
+}
+
+
 .contactUsButtom {
     background-color: #FA9021 ;
     border-radius: 7px;
@@ -81,7 +86,6 @@ p{
     font-size: 2vw;
     text-align: center;
     margin: 0;
-    margin-top: 2%;
     padding: 0;
     color: rgba(0, 0, 0, 0.579);
     

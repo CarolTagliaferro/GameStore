@@ -50,6 +50,15 @@ a {
     text-decoration: none;
 }
 
+.activeHome{
+    text-decoration: underline  2px #FA9021;
+    text-underline-position: under;
+}
+
+.menuPrincipal>a:hover{
+    transform: scale(1.1);
+}
+
 .contactUsButtom {
     background:#FA9021;
     border-radius: 7px;
@@ -134,8 +143,8 @@ h2{
 }
 
 .detailsButtom:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.367);
 }
 
 /* Segundo Bloco  */
@@ -223,6 +232,7 @@ h2{
 .spiderManImage{
     display: flex;
 }
+
 .spiderMan{
     align-items: center;
     display: flex;
@@ -233,7 +243,13 @@ h2{
     padding-bottom: 90px;
     padding-top: 60px;
     z-index: 1;    
+    transition: 0.5s ease-in-out;
 }
+
+.spiderMan:hover{
+    transform: scale(1.1) rotate(1deg);
+}
+
 
 #auxiliar {
     z-index: -1;
@@ -291,7 +307,7 @@ h5{
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 .sobretexto > p{
@@ -302,7 +318,7 @@ h5{
 }
 
 .linha{
-    margin-top: 50px;
+    margin-top: 70px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;

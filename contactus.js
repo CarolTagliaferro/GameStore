@@ -39,12 +39,12 @@ function validarNome(nome) {
 function salvarContactUs(fname, lname, emailForm, message){
 
     //validações que usei no form
-    if(!validarNome(fname)&& fname ==""){
+    if(!validarNome(fname) || fname ==""){
         alert("Insira um nome válido")
         return
     }
 
-    if(!validarNome(lname) && lname==""){
+    if(!validarNome(lname) || lname==""){
         alert("Insira um sobrenome válido")
         return
     }
