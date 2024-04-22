@@ -26,7 +26,38 @@ function salvar(){
     alert("Email cadastrado com sucesso!")
 }   
 
-function salvarContactUs(){
-    let firstName = document.getElementById("fname").value;
+function validarNome(nome) {
     
+    var regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s-']+$/;
+    return regex.test(nome);
+}
+
+
+function salvarContactUs(fname, lname, emailForm, message){
+
+    if(!validarNome(fname)&& fname ==""){
+        alert("Insira um nome válido")
+        return
+    }
+
+    if(!validarNome(lname) && lname==""){
+        alert("Insira um sobrenome válido")
+        return
+    }
+
+    if(message == ""){
+        alert("Escreva uma mensagem!")
+        return
+    }
+
+    if(!validarEmail(emailForm)) {
+        alert("Por favor, insira um e-mail válido!")
+        return
+    }
+
+    let info = JSON.stringify({nome: fname, sobrenome: lname, emailForm: emailForm, message: message})
+
+    localStorage.setItem('info', info)
+
+    alert("Cadastro concluído com sucesso!")
 }
