@@ -1,12 +1,14 @@
-
-let arr = []
-
+//Função que foi usada para validar email
 function validarEmail(emailPage2){
     var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     return regex.test(emailPage2)
 }
 
+
+//Usei para salvar o email no localstorage sem sobrescrever
 function salvar(){
+
+    let arr = []
     let novoEmail = document.getElementById("emailPage2").value
 
         if(!validarEmail(novoEmail)) {
@@ -26,7 +28,7 @@ function salvar(){
     alert("Email cadastrado com sucesso!")
 }   
 
-
+//Função que criei para validar nome e sobrenome
 function validarNome(nome) {
     
     var regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s-']+$/;
@@ -36,6 +38,7 @@ function validarNome(nome) {
 
 function salvarContactUs(fname, lname, emailForm, message){
 
+    //validações que usei no form
     if(!validarNome(fname)&& fname ==""){
         alert("Insira um nome válido")
         return
@@ -55,6 +58,8 @@ function salvarContactUs(fname, lname, emailForm, message){
         alert("Por favor, insira um e-mail válido!")
         return
     }
+
+    //Usei para salvar as informações no localstorage sem sobrescrever
 
     let info = {nome: fname, sobrenome: lname, emailForm: emailForm, message: message}
 

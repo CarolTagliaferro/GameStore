@@ -55,6 +55,11 @@ a {
     padding: 6px 17px 6px 17px;
     margin-left: 3%;
     margin-right: 4%;
+    transition: 0.3s ease-in-out;
+}
+
+.contactUsButtom:hover{
+    transform: scale(1.1);
 }
 
 /* Primeiro bloco */
@@ -127,6 +132,22 @@ a {
 .followUs >p {
     margin-left: 2%;
     font-size: 20px;
+}
+
+.fblogo:hover{
+    transform: scale(1.1) rotate(3deg);
+}
+
+.iglogo:hover{
+    transform: scale(1.1) rotate(3deg);
+}
+
+.ttlogo:hover{
+    transform: scale(1.1) rotate(3deg);
+}
+
+.inlogo:hover{
+    transform: scale(1.2);
 }
 
 .phone{
@@ -291,7 +312,11 @@ a {
     font-size: 16px;
     font-weight: 200;
     margin: 5% 0% 5% 1%;
+    transition: all 0.3s ease-in-out;
+}
 
+.confirmButton:hover{
+    background-color: #ffa23e;
 }
 
 .imageContainer{
@@ -313,6 +338,7 @@ a {
 }
 
 /* Quarto bloco */
+
 #quartoBloco{
     width: 100%;
     display: block;
@@ -401,6 +427,11 @@ h5{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 200;
+    transition: all 0.3s ease-in-out;
+}
+
+.emailBox > button:hover{
+    background-color: #ffa23e;
 }
 
 .textoSubscribe{

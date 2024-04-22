@@ -1,12 +1,12 @@
-
-let arr = []
-
+//Função que foi usada para validar email
 function validarEmail(email){
     var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     return regex.test(email)
 }
 
+//Usei para salvar o email no localstorage sem sobrescrever
 function salvar(){
+    let arr = []
     let novoEmail = document.getElementById("email").value
 
         if(!validarEmail(novoEmail)) {
