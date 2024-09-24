@@ -1,5 +1,5 @@
 # Desafio 1 - Compass UOL✨
-<p align="start">Este projeto é um site ficitio para uma loja de games 🎮 </p>
+<p align="start">Este projeto é um site fictício para uma loja de games 🎮 </p>
 <br>
 
 ## 💡Sobre
