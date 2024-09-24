@@ -442,6 +442,20 @@ h5{
     width: 50%;
 }
 
+#messagePage2 {
+    color: red; /* Cor da mensagem de erro */
+    margin-top: 5px; /* Espaçamento acima da mensagem */
+    font-size: 14px; /* Tamanho da fonte da mensagem */
+    display: none; /* Inicialmente oculto */
+    font-family: 'Arial', sans-serif; /* Altere para a fonte desejada */
+    font-weight: bold; /* Altere a espessura da fonte se necessário */
+}
+
+#messagePage2.success {
+    color: green; /* Cor da mensagem de sucesso */
+}
+
+
 /* Footer */
 
 footer {

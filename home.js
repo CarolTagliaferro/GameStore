@@ -5,12 +5,22 @@ function validarEmail(email){
 }
 
 //Usei para salvar o email no localstorage sem sobrescrever
-function salvar(){
+function salvar(event){
+    event.preventDefault()
+
     let arr = []
     let novoEmail = document.getElementById("email").value
 
+    const message = document.getElementById("message")
+    message.style.display = "none"
+
         if(!validarEmail(novoEmail)) {
-            alert("Por favor, insira um e-mail válido!")
+            message.textContent = "Por favor, insira um email válido!"
+            message.className = ""
+            message.style.display = "block"
+            setTimeout(() => {
+                message.style.display = "none"
+       }, 3000)
             return
         }
 
@@ -23,5 +33,10 @@ function salvar(){
     document.getElementById("email").value = " "
     localStorage.emails = JSON.stringify(arr)
 
-    alert("Email cadastrado com sucesso!")
+    message.textContent = "Cadastro efetuado com sucesso!"
+    message.className = "success"
+    message.style.display = "block"
+    setTimeout(() => {
+        message.style.display = "none";
+    }, 3000);
 }   

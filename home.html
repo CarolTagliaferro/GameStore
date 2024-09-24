@@ -18,13 +18,15 @@
 <header>
     
         <div class="logo_header">
+            <a href="home.html">
             <img src="Imagens/LOGO.png" class="imgLogoHeader" alt="LOGO">
+        </a>
         </div>
         <div class="menuPrincipal">
             <a href="home.html"  class="activeHome">Home</a>
-            <a href="errorpage.html" target="_blank" >About Us</a>
-            <a href="errorpage.html" target="_blank" >Portfolio</a>
-            <a href="errorpage.html" target="_blank" >News</a>
+            <a href="errorpage.html"  >About Us</a>
+            <a href="errorpage.html"  >Portfolio</a>
+            <a href="errorpage.html"  >News</a>
         </div>
         <div class="contactUsButtom">
             <a href="contactus.html" >Contact Us</a>
@@ -39,7 +41,7 @@
             <h2>Work that we<br>produce for our<br>clients</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the industry's<br> standard</p>
             <br>
-            <a href="errorpage.html" target="_blank" class="detailsButtom">Get more details</a>
+            <a href="errorpage.html" class="detailsButtom">Get more details</a>
         </div>
         <div id="imagens">
             <div class="engines">
@@ -190,23 +192,25 @@
             <h5>Lorem Ipsum</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry.</p>
         </div>
-
+    
         <div class="subscribeConteudo">
-            
             <div class="textoSubscribe">
                 <h5>Stay in the loop</h5>
-                <p>Subscrive to receive the latest news and updates about TDA.<br>We promise not to spam you!</p>
+                <p>Subscribe to receive the latest news and updates about TDA.<br>We promise not to spam you!</p>
             </div>
-
-            
+    
             <div class="emailInput">
-                <form class="emailBox">
-                    <input type="email" id="email" placeholder="Enter email address">
-                    <button type="submit" onclick="salvar()" >Continue</button>
-                </form>  
-            </div>   
-           
+                <form class="emailBox" onsubmit="return salvar(event)">
+                    <div class="input-container"> 
+                        <input type="email" id="email" placeholder="Enter email address" required>
+                        <button type="submit">Continue</button>
+                    </div>
+                </form>
+                <p id="message"></p> 
+            </div>
+        </div>
     </div>
+    
     
           
 </body>
@@ -214,7 +218,9 @@
 <footer>
 
     <div class="logoFooter">
+        <a href="home.html">
         <img src="Imagens/LOGO.png" class="imgLogoFooter" alt="Logo footer">
+        </a>
         <p>Lorem Ipsum is simply dummy text of the<br>printing andtypesetting industry.</p>
         <p>@Logo</p>
     </div>
@@ -222,13 +228,13 @@
     <p id="aboutUs">
         About us
         <br><br>
-        Zeux
+        <a href="errorpage.html">Zeux</a>
         <br>
-        Portfolio
+        <a href="errorpage.html">Portfolio</a>
         <br>
-        Careers
+        <a href="errorpage.html">Careers</a>
         <br>
-        Contact us
+        <a href="contactus.html">Contact us</a>
     </p>
         
     <p id="contactUs">
