@@ -1,5 +1,5 @@
 # 🎮 Game Store
-Bem-vindo(a)! Este projeto é um site fictício de uma loja de games, desenvolvido como primeiro projeto do programa de estágio na *Compass UOL*.
+Bem-vindo(a)! Este projeto é um site fictício de uma loja de games, desenvolvido como primeiro projeto do programa de estágio na *Compass UOL* e também como **meu primeiro projeto no desenvolvimento Front-End** 💻✨
 
 ## 💡Sobre o projeto
 O desafio consistiu em recriar um site para uma loja de games com base em um protótipo no Figma e seguindo orientações da PO. O foco foi aplicar os conhecimentos adquiridos durante a trilha do PB, utilizando:
@@ -20,3 +20,6 @@ Para acessar o projeto você deve seguir alguns passos. Confira:
 5. Clique com o botão direito e selecione "Open with Live Server".
 
 Pronto! O site será aberto automaticamente no seu navegador 🚀
+
+## 🤝 Contato
+[LinkedIn](https://www.linkedin.com/in/ana-tagliaferro-2b8467268/)
