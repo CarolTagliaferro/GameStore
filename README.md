@@ -1,26 +1,22 @@
-# Desafio 1 - Compass UOL✨
-<p align="start">Este projeto é um site fictício para uma loja de games 🎮 </p>
-<br>
+# 🎮 Game Store
+Bem-vindo(a)! Este projeto é um site fictício de uma loja de games, desenvolvido como primeiro projeto do programa de estágio na *Compass UOL*.
 
-## 💡Sobre
-<p align="start">O objetivo do projeto foi recriar um site para uma loja de games tendo como exemplo um design criado no Figma e instruções passadas pela PO. O projeto foi desenvoldido utilizando JavaScript, HTML e CSS, conteudo que foi estudado durante a trilha do PB.</p>
-<br>
+## 💡Sobre o projeto
+O desafio consistiu em recriar um site para uma loja de games com base em um protótipo no Figma e seguindo orientações da PO. O foco foi aplicar os conhecimentos adquiridos durante a trilha do PB, utilizando:
+
+- 🧠 JavaScript para adicionar interatividade;
+- 🎨 HTML e CSS para estrutura e estilização da interface.
 
 ## 🚩Status do projeto
-<p align="start">O site no momento não é totalmente responsivo, para uma melhor visualização use telas padrão 1920x1080px. </p>
-<br>
+> ⚠️ O site ainda não está totalmente responsivo, então recomenda-se a visualização em tela com resolução 1920x1080px para melhor experiência.
 
 ## 🔎Como acessar?
-<p align="start"> Para acessar o projeto você deve seguir alguns passos. Confira:</p>
-<br>
+Para acessar o projeto você deve seguir alguns passos. Confira:
 
-<p align="start"> 1° Copie a URL do repositório -> https://github.com/CarolTagliaferro/Desafio1.git </p>
-<p align="start"> 2° Abra o Git Bash.</p>
-<p align="start"> 3° Altere o diretório de trabalho atual para o local em que deseja ter o diretório clonado.</p>
-<p align="start"> 4° Digite git clone e cole a URL já copiada.</p>
-<p align="start"> 5° Pressione ENTER para criar seu clone local.</p>
-<p align="start"> 6° Abra o projeto no Visual Studio Code.</p>
-<p align="start"> 7° Caso não tenha, instale a extensão Live Server.</p>
-<p align="start"> 8° Selecione o home.html e abra com o Live Server.</p>
-<br>
-<p align="start"> Pronto! Você já pode navegar pelo site 🚀</p>
+1. Clone o repositório -> https://github.com/CarolTagliaferro/GameStore.git
+2. Abra o Visual Studio Code.
+3. Caso não tenha, instale a extensão Live Server.
+4. Abra o arquivo home.html.
+5. Clique com o botão direito e selecione "Open with Live Server".
+
+Pronto! O site será aberto automaticamente no seu navegador 🚀
